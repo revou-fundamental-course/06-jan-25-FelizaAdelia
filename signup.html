@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portofolio Website - Sign In</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #00B98E;
+        }
+        body {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .signin-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 900px;
+            background: #fff;
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .signin-left {
+            flex: 1;
+            background: url('img/carousel-2.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 300px;
+        }
+        .signin-right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-header {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background: var(--primary);
+            border: none;
+            border-radius: 50px;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background: darken(var, 10%);
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .signin-container {
+                flex-direction: column;
+            }
+            .signin-left {
+                height: 200px; /* Adjust height for small screens */
+            }
+            .signin-right {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signin-container">
+        <div class="signin-left"></div>
+        <div class="signin-right">
+            <div class="card-header">
+                <h4>Sign Up</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <!-- Nama -->
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                    </div>
+                    
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <a href="signin.html" class="btn btn-primary btn-block mt-4">Sign Up</a>
+                    
+                    <!-- Sign Up Link -->
+                    <p class="text-center mt-3">Already have an account? <a href="signin.html">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
